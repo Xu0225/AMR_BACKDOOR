@@ -92,26 +92,26 @@ from mltools import evaluation
 import pandas as pd
 
 # model training
-EPOCH = 10
-# model_TBD = ['VTCNN2',
-#              'CNN2',
-#              'CNN2Model',
-#              'CLDNNLikeModel',
-#              'CLDNNLikeModel1',
-#              'CLDNNLikeModel2',
-#              'CGDNN',
-#              'LSTMModel',
-#              'DAE',
-#              #'DCNNPF',
-#              'DenseNet',
-#              'GRUModel',
-#              'ICAMC',
-#              #'MCLDNN',
-#              'MCNET',
-#              #'PETCGDNN',
-#              'ResNet',
-#             ]
-model_TBD = ['DAE']
+EPOCH = 100
+model_TBD = ['VTCNN2',
+             'CNN2',
+             'CNN2Model',
+             'CLDNNLikeModel',
+             'CLDNNLikeModel1',
+             'CLDNNLikeModel2',
+             'CGDNN',
+             'LSTMModel',
+             'DAE',
+             #'DCNNPF',
+             'DenseNet',
+             'GRUModel',
+             'ICAMC',
+             #'MCLDNN',
+             'MCNET',
+             #'PETCGDNN',
+             'ResNet',
+            ]
+# model_TBD = ['DAE']
 for target_DNN in model_TBD:
     # build_model
     model = build_model(target_model=target_DNN)
